@@ -18,6 +18,7 @@ public class Ciudad {
     @Column(name = "ciudad", length = 100)
     private String nombre;
 
+    @ManyToOne
     @JoinColumn(name = "idpais", referencedColumnName = "id")
     private Seleccion pais;
 

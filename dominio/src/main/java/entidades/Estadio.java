@@ -18,10 +18,11 @@ public class Estadio {
     @Column(name = "estadio", length = 100)
     private String nombre;
 
+    @ManyToOne
     @JoinColumn(name = "idciudad", referencedColumnName = "id")
     private Ciudad ciudad;
 
-     @Column(name = "capacidad")
+    @Column(name = "capacidad")
     private int capacidad;
 
     public Estadio() {
@@ -65,7 +66,5 @@ public class Estadio {
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
-
-    
 
 }
