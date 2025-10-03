@@ -1,9 +1,6 @@
-package encuentrosfifa.api.dominio.entidades;
+package campeonatosfifa.api.dominio.entidades;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Date;
 

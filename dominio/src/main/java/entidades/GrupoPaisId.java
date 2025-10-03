@@ -1,4 +1,4 @@
-package entidades;
+package campeonatosfifa.api.dominio.entidades;
 
 public class GrupoPaisId {
 

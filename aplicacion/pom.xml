@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>infraestructura</artifactId>
+    <artifactId>aplicacion</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -14,17 +14,15 @@
             <artifactId>dominio</artifactId>
             <version>0.0.1-SNAPSHOT</version> 
         </dependency>
+        <dependency>
+            <groupId>campeonatosfifa</groupId> 
+            <artifactId>core</artifactId>
+            <version>0.0.1-SNAPSHOT</version> 
+        </dependency>
+        <dependency>
+            <groupId>campeonatosfifa</groupId> 
+            <artifactId>infraestructura</artifactId>
+            <version>0.0.1-SNAPSHOT</version> 
+        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
