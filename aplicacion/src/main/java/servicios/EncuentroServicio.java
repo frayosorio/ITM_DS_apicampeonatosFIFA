@@ -18,17 +18,17 @@ public class EncuentroServicio implements IEncuentroServicio {
 
     @Override
     public List<Encuentro> listarCampeonato(int idCampeonato) {
-        return repositorio.listarCampeonato(idCampeonato);
+        return repositorio.listarPorCampeonato(idCampeonato);
     }
 
     @Override
     public List<Encuentro> listarCampeonatoFase(int idCampeonato, int idFase) {
-        return repositorio.listarCampeonatoFase(idCampeonato, idFase);
+        return repositorio.listarPorCampeonatoYFase(idCampeonato, idFase);
     }
 
     @Override
     public List<Encuentro> listarGrupo(int idGrupo) {
-        return repositorio.listarGrupo(idGrupo);
+        return repositorio.listarPorGrupo(idGrupo);
     }
 
     @Override

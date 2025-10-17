@@ -13,7 +13,7 @@ public interface ISeleccionServicio {
 
     public Seleccion agregar(Seleccion seleccion);
 
-    public Seleccion modificion(Seleccion seleccion);
+    public Seleccion modificar(Seleccion seleccion);
 
     public boolean eliminar(int id);
 

@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface IGrupoPaisRepositorio extends JpaRepository<GrupoPais, GrupoPaisId> {
 
-    @Query("SELECT gp FROM GrupoPais gp WHERE gp.grupo.id=?1 ORDER BY gp.pais.nombre ASC")
+    @Query("SELECT gp FROM GrupoPais gp WHERE gp.grupo.id=?1 ORDER BY gp.seleccion.nombre ASC")
     public List<GrupoPais> listarPaises(int idGrupo);
 
 }

@@ -11,10 +11,10 @@ import java.util.List;
 @Repository
 public interface IEncuentroRepositorio extends JpaRepository<Encuentro, Integer> {
 
-    @Query("SELECT e FROM Encuentro e WHERE e.campeonato.id=:idCampeonato ORDER BY f.fecha ASC")
+    @Query("SELECT e FROM Encuentro e WHERE e.campeonato.id=:idCampeonato ORDER BY e.fecha ASC")
     public List<Encuentro> listarPorCampeonato(int idCampeonato);
 
-    @Query("SELECT e FROM Encuentro e WHERE e.campeonato.id=:idCampeonato AND e.fase.id=:idFase ORDER BY f.fecha ASC")
+    @Query("SELECT e FROM Encuentro e WHERE e.campeonato.id=:idCampeonato AND e.fase.id=:idFase ORDER BY e.fecha ASC")
     public List<Encuentro> listarPorCampeonatoYFase(int idCampeonato, int idFase);
 
     @Query("SELECT e FROM Encuentro e" +

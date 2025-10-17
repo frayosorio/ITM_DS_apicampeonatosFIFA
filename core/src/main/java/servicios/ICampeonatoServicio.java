@@ -14,7 +14,7 @@ public interface ICampeonatoServicio {
 
     public Campeonato agregar(Campeonato campeonato);
 
-    public Campeonato modificion(Campeonato campeonato);
+    public Campeonato modificar(Campeonato campeonato);
 
     public boolean eliminar(int id);
 }

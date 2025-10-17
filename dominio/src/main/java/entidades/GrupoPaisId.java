@@ -3,14 +3,14 @@ package campeonatosfifa.api.dominio.entidades;
 public class GrupoPaisId {
 
     private int seleccion;
-    private int pais;
+    private int grupo;
 
     public GrupoPaisId() {
     }
 
-    public GrupoPaisId(int seleccion, int pais) {
+    public GrupoPaisId(int seleccion, int grupo) {
         this.seleccion = seleccion;
-        this.pais = pais;
+        this.grupo = grupo;
     }
 
     public int getSeleccion() {
@@ -21,12 +21,14 @@ public class GrupoPaisId {
         this.seleccion = seleccion;
     }
 
-    public int getPais() {
-        return pais;
+    public int getGrupo() {
+        return grupo;
     }
 
-    public void setPais(int pais) {
-        this.pais = pais;
+    public void setGrupo(int grupo) {
+        this.grupo = grupo;
     }
+
+
 
 }
