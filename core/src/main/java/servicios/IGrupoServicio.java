@@ -14,7 +14,7 @@ public interface IGrupoServicio {
 
     public Grupo agregar(Grupo Grupo);
 
-    public Grupo modificion(Grupo Grupo);
+    public Grupo modificar(Grupo Grupo);
 
     public boolean eliminar(int id);
 

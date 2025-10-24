@@ -26,4 +26,29 @@ public class SeleccionControlador {
        return servicio.listar();
     }
 
+    @RequestMapping(value="/obtener/{id}", method=RequestMethod.GET)
+    public Seleccion obtener(@PathVariable int id){
+       return servicio.obtener(id);
+    }
+
+    @RequestMapping(value="/buscar/{nombre}", method=RequestMethod.GET)
+    public List<Seleccion> buscar(@PathVariable String nombre){
+        return servicio.buscar(nombre);
+    }
+
+    @RequestMapping(value="/agregar", method=RequestMethod.POST)
+    public Seleccion agregar(@RequestBody Seleccion seleccion){
+        return servicio.agregar(seleccion);
+    }
+
+    @RequestMapping(value="/modificar", method=RequestMethod.PUT)
+    public Seleccion modificar(@RequestBody Seleccion seleccion){
+        return servicio.modificar(seleccion);
+    }
+
+    @RequestMapping(value="/eliminar/{id}", method=RequestMethod.DELETE)
+    public boolean eliminar(@PathVariable int id){
+        return servicio.eliminar(id);
+    }
+
 }
