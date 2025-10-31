@@ -17,6 +17,10 @@ public class TablaPosicionDto {
     private int gc;
     private int puntos;
 
+    
+    public TablaPosicionDto() {
+    }
+
     public TablaPosicionDto(int id, String pais, int pj, int pg, int pe, int pp, int gf, int gc, int puntos) {
         this.id = id;
         this.pais = pais;

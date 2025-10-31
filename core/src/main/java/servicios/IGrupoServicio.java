@@ -10,8 +10,6 @@ public interface IGrupoServicio {
 
     public Grupo obtener(int id);
 
-    public List<Grupo> buscar(int idCampeonato, String nombre);
-
     public Grupo agregar(Grupo Grupo);
 
     public Grupo modificar(Grupo Grupo);
